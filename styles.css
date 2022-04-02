@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.calculadora{
+    margin: 10px;
+}
+:root{
+    --tamanio: 25px
+}
+#calc-form{
+    font-size: 15px;
+    border: 1px solid black;
+    display: grid;
+    width: 450px;
+    height: 500px;
+    grid-template-areas: "pantalla pantalla pantalla pantalla"
+    "pantalla pantalla pantalla pantalla"
+    "Delete Delete Backspace Backspace"
+    "siete ocho nueve multiplicacion"
+    "cuatro cinco seis resta"
+    "uno dos tres suma"
+    "punto cero divicion igual";
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(154, 178, 255);
+    border: none;
+}
+#pantalla{
+    font-size: 2em;
+    color: white;
+    grid-area: pantalla;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1.5px solid grey;
+    background-color: rgb(82, 82, 82);
+}
+#cero,#uno,#dos,#tre,#cuatro,#cinco,#seis,#siete,#ocho,#nueve,
+#suma,#resta,#multiplicacion,#divicion,#tres,#igual,#punto,
+#Delete,#Backspace{
+    font-size: var(--tamanio);
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px;
+    background-color: rgb(241, 241, 241);
+}
+#cero:active,#uno:active,#dos:active,#tre:active,#cuatro:active,#cinco:active,#seis:active,#siete:active,#ocho:active,#nueve:active,
+#suma:active,#resta:active,#multiplicacion:active,#divicion:active,#tres:active,#igual:active,#punto:active,
+#Delete:active,#Backspace:active{
+    box-shadow: 0px 0px;
+    border: 2px solid black;
+}
+#cero{
+    grid-area: cero;
+}
+#uno{
+    grid-area: uno;
+}
+#dos{
+    grid-area: dos;
+}
+#tres{
+    grid-area: tres;
+}
+#cuatro{
+    grid-area: cuatro;
+}
+#cinco{
+    grid-area: cinco;
+}
+#seis{
+    grid-area: seis;
+}
+#siete{
+    grid-area: siete;
+}
+#ocho{
+    grid-area: ocho;
+}
+#nueve{
+    grid-area: nueve;
+}
+#suma{
+    grid-area: suma;
+}
+#resta{
+    grid-area: resta;
+}
+#divicion{
+    grid-area: divicion;
+}
+#multiplicacion{
+    grid-area: multiplicacion;
+}
+#Delete{
+    grid-area: Delete;
+}
+#punto{
+    grid-area: punto;
+}
+#Backspace{
+    grid-area: Backspace;
+}
+#igual{
+    grid-area: igual;
+}
